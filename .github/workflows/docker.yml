@@ -27,5 +27,6 @@ jobs:
     - name: aisoperator image
       run: |
         pushd $GITHUB_WORKSPACE/operator
+        cat Dockerfile
         IMG="${{ env.AISOPERATOR_IMAGE }}:${{ inputs.image_tag }}" make docker-build docker-push
         popd
