@@ -9,7 +9,7 @@ on:
         default: 'latest'
 
 env:
-  AISOPERATOR_IMAGE: 'aistorage/ais-operator'
+  AISOPERATOR_IMAGE: 'saiprashanth173/ais-operator'
 
 jobs:
   docker:
